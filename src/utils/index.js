@@ -9,7 +9,6 @@ export function _debounce(fn, delay) {
       clearTimeout(timer)
     }
     timer = setTimeout(function () {
-      console.log(`实际执行代码！！！`)
       timer = null
       fn.apply(th, args)
     }, delay)
